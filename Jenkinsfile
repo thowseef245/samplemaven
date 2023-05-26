@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage("clone code"){
             steps{
-                git url: 'https://github.com/thowseef245/maven-web-application-development.git'
+                git url: 'https://github.com/thowseef245/samplemaven.git'
             }
         }
         stage("build code"){
