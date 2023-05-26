@@ -3,7 +3,7 @@ pipeline {
         label 'java-build-node'
     }
     environment{
-        PATH = "$PATH:/opt/maven-3.9/bin"
+        PATH = "$PATH:/opt/maven/bin"
     }
     stages {
         stage("clone code"){
