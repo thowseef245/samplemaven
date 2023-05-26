@@ -1,6 +1,7 @@
 pipeline {
     agent{
         label 'java-build-node'
+    }
     environment{
         PATH = "$PATH:/opt/maven-3.9/bin"
     }
