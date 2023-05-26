@@ -15,6 +15,12 @@ pipeline {
             steps{
                 sh "mvn clean package"
             }
-        }        
+        }
+        stage("deploy tomcat"){
+            steps{
+                
+                sh 'curl -T ./target/maven-web-application.war "http://admin:admin@107.23.158.212:8088/manager/text/deploy?path=/myapp&update=true"'
+            }
+        }
     }
 }
